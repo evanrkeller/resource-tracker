@@ -1,0 +1,4 @@
+language: ruby
+before_script:
+  - cp config/database.yml.travis config/database.yml
+  - psql -c 'create database "resource-tracker_test";' -U postgres
