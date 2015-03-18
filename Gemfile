@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby "2.2.1"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -25,6 +25,8 @@ gem 'haml-rails'
 gem 'bootstrap-generators', '~> 3.3.1'
 
 gem 'devise'
+
+gem 'tracker_api', '~> 0.2.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
