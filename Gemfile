@@ -40,6 +40,8 @@ gem 'tracker_api', '~> 0.2.0'
 group :test do
   gem 'simplecov', require: false
   gem 'rake'
+  gem 'webmock'
+  gem 'climate_control'
 end
 
 group :development, :test do
