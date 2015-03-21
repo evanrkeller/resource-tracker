@@ -16,7 +16,7 @@ RSpec.describe ProjectsController, type: :controller do
     before do
       sign_in FactoryGirl.create(:user)
       stub_request(:get, "https://www.pivotaltracker.com/services/v5/projects").
-        with(:headers => {'Host'=>'www.pivotaltracker.com:443', 'User-Agent'=>'Ruby/2.2.1 (x86_64-darwin14; ruby) TrackerApi/0.2.7 Faraday/0.9.1', 'X-Trackertoken'=>'99999'}).
+        with(:headers => {'X-Trackertoken'=>'99999'}).
         to_return(:status => 200, :body => IO.read('./spec/data/projects.json'), :headers => {})
     end
 
